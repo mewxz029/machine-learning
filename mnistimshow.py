@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 mnist_raw = loadmat("mnist-original.mat")
 mnist = {
-    # Row -> Column Swap
+    # mnist_raw["data"].T === Transpose Row -> Column
     "data": mnist_raw["data"].T,
     "target": mnist_raw["label"][0]
 }
