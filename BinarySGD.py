@@ -36,4 +36,3 @@ x, y = mnist["data"], mnist["target"]
 x_train, x_test, y_train, y_test = x[:60000], x[60000:], y[:60000], y[60000:]
 
 Classifier(0, 5000, x_train, x_test, y_train, y_test)
-
