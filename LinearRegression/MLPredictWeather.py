@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 
-dataset = pd.read_csv("Weather.csv")
+dataset = pd.read_csv("LinearRegression/Weather.csv")
 
 # train & test set
 x = dataset["MinTemp"].values.reshape(-1, 1)
