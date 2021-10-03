@@ -1,8 +1,8 @@
-from operator import mod
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
+# return to data and cluster
 x, y = make_blobs(n_samples=300, centers=4, cluster_std=0.5, random_state=0)
 
 # New point
