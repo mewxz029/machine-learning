@@ -1,6 +1,6 @@
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 
@@ -37,3 +37,4 @@ clf_pred = model.predict(test_features)
 
 print("Accuracy = {:.2f}%".format(accuracy_score(test_labels, clf_pred) * 100))
 print(pd.crosstab(test_labels, clf_pred, rownames=['Actually'], colnames=['Prediction']))
+print(classification_report(test_labels, clf_pred))
